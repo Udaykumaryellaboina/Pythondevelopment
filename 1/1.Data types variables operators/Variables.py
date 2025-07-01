@@ -1,4 +1,4 @@
-#Variables in Python
+#Variabl es in Python
 
 #What is a Variable?
 
@@ -56,7 +56,9 @@ a = "hello"   # now a is str
 #❌ Invalid Variable Names:
 
 1name = "John"     # starts with a number ❌
+#0utput:SyntaxError: invalid decimal literal
 my-name = "Raj"    # hyphen is not allowed ❌
+# Output:SyntaxError: cannot assign to expression here. Maybe you meant '==' instead of '='?
 
 
 #Variable Reassignment
@@ -91,11 +93,13 @@ print(x)      # Output: 50
 
 """To modify the global variable inside a function, use global:"""
 
-
+x=123
 def update():
     global x
     x = 999
-
+    print(x)
+update()        # Output: 999
+print(x)        ## Output: 999
 
 #🔹 Type Checking
 
@@ -142,19 +146,28 @@ def greet(name: str) -> str:
     return "Hello " + name
 
 greet(123)  # ❌ No error at runtime, but tools like mypy will warn you
-
+greet("uday") #output = 'Hello uday'
+greet(uday) # name 'uday' is not defined
 
 #✔️ Use tools like mypy to statically check types:
 
 
-mypy script.py
+'''mypy script.py'''
 
 #🔹 4. Using isinstance() for Runtime Checks
 
 x = 42
 if isinstance(x, int):
     print("x is an integer")
+    
+#NOTE:if x is of any other type onterh in int it wil not give any output or error
+#output: x is an integer
 
+x = "udat"
+if isinstance(x, str):
+    print("x is an string")
+#NOTE:if x is of any other type onterh in str it wil not give any output or error  
+  
 #🔹 5. Type Safety in Collections (With typing)
 
 from typing import List, Dict
@@ -176,6 +189,14 @@ class Product:
     price: float
 
 item = Product("Book", 99.99)
+print(item)
+#Product(name='Book', price=99.99)
+print(type(Product))
+#<class 'type'>
+print(type(item))
+
+
+#output <class '__main__.Product'>
 
 ###FAANG-Level Variable Questions in Python
 
@@ -249,9 +270,9 @@ for i in range(3):
 results = [func() for func in functions]
 print(results)
 
-Concept tested: Late binding in closures
+#Concept tested: Late binding in closures
 
-Output:
+#Output:
 
 
 [2, 2, 2]
@@ -267,7 +288,7 @@ for i in range(3):
         return i
     functions.append(f)
 
-❓ 5. Global vs Nonlocal Example
+#❓ 5. Global vs Nonlocal Example
 
 x = 5
 def outer():
@@ -282,8 +303,7 @@ outer()
 
 #Concept tested: nonlocal variable scoping
 
-Output:
-
+#Output:
 11
 11
 
@@ -300,7 +320,7 @@ print(a, b)
 
 """Concept tested: Bitwise variable manipulation"""
 
-Output:
+#Output:
 
 
 10 5
@@ -336,11 +356,13 @@ b = MyClass(2)
 print(a.vals)
 print(b.vals)
 
-Output:
+#Output:
 
 
 [1, 2]
 [1, 2]
+
+
 
 """Explanation: vals is a class-level variable (shared across all instances)."""
 
@@ -388,7 +410,8 @@ def add_item(item, items=None):
         items = []
     items.append(item)
     return items
-
+print(add_item(1))  # [1]
+print(add_item(2)) #[2]
 
 #🔷 3. Variable Scope – global, nonlocal, local
 
@@ -433,12 +456,66 @@ for i in range(3):
 
 print([f() for f in funcs])  # [2, 2, 2]
 
+"""🔍 What You Might Expect:
+You might think the output will be:
+
+[0, 1, 2]
+
+But the actual output is:
+
+
+[2, 2, 2]
+
+✅ Why? — Closures + Late Binding
+f() is a closure, meaning it remembers the variable i from the surrounding scope.
+
+BUT: it doesn’t capture the current value of i at the time of creation.
+
+Instead, it refers to i when the function is actually called, which is after 
+the loop ends, and i becomes 2 (the last value in range(3)).
+
+So, all 3 functions in the funcs list return 2 when called.
+
+🔁 What Actually Happens:
+
+# After the loop ends, i = 2
+
+funcs[0]() → returns i → 2  
+funcs[1]() → returns i → 2  
+funcs[2]() → returns i → 2
+Hence:
+
+
+[2, 2, 2]
+"""
+
 #✅ Fix with early binding:
 
-
+funcs = []
 for i in range(3):
-    def f(i=i): return i
+    def f(i=i):  # 👈 bind current value of i
+        return i
+    funcs.append(f)
 
+print([f() for f in funcs])  # ✅ Output: [0, 1, 2]
+
+
+funcs = []
+for i in range(3):
+    def f(i=i+1):  # 👈 bind current value of i
+        return i
+    funcs.append(f)
+
+print([f() for f in funcs])  # ✅ Output: [1,2,3]
+
+funcs = []
+def f():
+    for i in range(3):
+        funcs.append(f)
+   # 👈 bind current value of i
+        return i
+
+print([f() for f in funcs])  # ✅ Output: []
 
 #🔷 5. Object References and Memory IDs
 """Use id() to get the memory address."""
@@ -472,9 +549,48 @@ a = 257
 b = 257
 print(a is b)  # False (not interned)
 
-'''📌 Don’t rely on is for value equality. Use == instead.'''
+#Concept: Python Interning / Object Caching
 
-🔷 7. Deepcopy vs Shallow Copy
+'''Python automatically caches (interns) some immutable objects like:
+
+Small integers: from -5 to 256
+
+Some strings (depending on usage)
+
+This means that for values in that range, Python reuses the same object in memory to optimize performance.
+
+🔍 Explanation:
+a = 256 and b = 256
+Both a and b point to the same memory address because Python reuses the object for small integers:
+
+
+print(id(a))  # e.g. 140715116170320
+print(id(b))  # same as id(a)
+print(a is b)  # ✅ True
+a = 257 and b = 257
+257 is outside the interned range, so Python creates two different objects:
+
+
+print(id(a))  # e.g. 140715115877904
+print(id(b))  # different from id(a)
+print(a is b)  # ❌ False
+
+🔁 is vs ==
+is: checks if two variables refer to the same object in memory
+
+==: checks if values are the same
+
+
+a = 257
+b = 257
+print(a == b)  # ✅ True (values are equal)
+print(a is b)  # ❌ False (different memory addresses)
+
+📌 Don’t rely on is for value equality. Use == instead.
+'''
+
+
+#🔷 7. Deepcopy vs Shallow Copy
 
 import copy
 
@@ -505,7 +621,7 @@ b = A(2)
 
 print(a.shared)  # [1, 2] ✅ shared
 
-To make it instance-specific:
+#To make it instance-specific:
 
 class A:
     def __init__(self, val):
