@@ -35,9 +35,9 @@ class Solution:
 
         for i, num in enumerate(nums):
             complement = target - num
-            if complement in num_map:
-                return [num_map[complement], i]
-            num_map[num] = i
+            if complement in num_map: #If complement is already in num_map, it means we already saw the number needed to form the target.
+                return [num_map[complement], i] #Return their indices.
+            num_map[num] = i #Add the current number and its index to num_map for future lookups.
 
 
 sol = Solution()
@@ -117,17 +117,24 @@ two pointer approach will be used
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # # Step 1: Attach original indices to each number
         nums_with_index = [(num, i) for i, num in enumerate(nums)]
+        # Step 2: Sort the list by the number value (not index)
         nums_with_index.sort()  # Sort by value
 
+        # Step 3: Use two-pointer technique
+        #The goal is to move these pointers inward to find two numbers that add to the target.
+        #left starts from the beginning of the sorted list.
+         # right starts from the end.
+
         left, right = 0, len(nums) - 1
-        while left < right:
+        while left < right: #This loop continues as long as left is to the left of right.
             sum_val = nums_with_index[left][0] + nums_with_index[right][0]
-            if sum_val == target:
+            if sum_val == target: #If the sum equals the target, return their original indices
                 return [nums_with_index[left][1], nums_with_index[right][1]]
-            elif sum_val < target:
+            elif sum_val < target: #If the sum is too small, move the left pointer forward to try a bigger number.
                 left += 1
-            else:
+            else: #If the sum is too big, move the right pointer backward to try a smaller number.
                 right -= 1
 
 

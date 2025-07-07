@@ -55,9 +55,9 @@ a = "hello"   # now a is str
 
 #❌ Invalid Variable Names:
 
-1name = "John"     # starts with a number ❌
+#1name = "John"     # starts with a number ❌
 #0utput:SyntaxError: invalid decimal literal
-my-name = "Raj"    # hyphen is not allowed ❌
+#my-name = "Raj"    # hyphen is not allowed ❌
 # Output:SyntaxError: cannot assign to expression here. Maybe you meant '==' instead of '='?
 
 
@@ -147,7 +147,7 @@ def greet(name: str) -> str:
 
 greet(123)  # ❌ No error at runtime, but tools like mypy will warn you
 greet("uday") #output = 'Hello uday'
-greet(uday) # name 'uday' is not defined
+#greet(uday) # name 'uday' is not defined
 
 #✔️ Use tools like mypy to statically check types:
 
@@ -225,14 +225,14 @@ default arguments are only evaluated once.
 """
 
 #❓ 2. What is the output and why?
-
+'''
 x = 10
 def foo():
     print(x)
     x = 5
 
 foo()
-
+'''
 
 #Concept tested: Variable shadowing and UnboundLocalError
 
@@ -321,9 +321,7 @@ print(a, b)
 """Concept tested: Bitwise variable manipulation"""
 
 #Output:
-
-
-10 5
+#10 5
 
 #❓ 7. Variable ID & Interning
 
