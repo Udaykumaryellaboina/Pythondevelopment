@@ -1,0 +1,84 @@
+1. Conditionals (Decision Making)
+🔹 Basics of Conditionals:
+if statement
+if-else statement
+if-elif-else ladder
+
+🔹 Nested Conditionals:
+if inside another if
+Multiple nested levels
+
+🔹 Logical Operators:
+and
+or
+not
+
+🔹 Comparison Operators:
+== (equal)
+!= (not equal)
+> , < , >= , <=
+
+🔹 Ternary Conditional Operator:
+Syntax:
+result = a if condition else b
+
+🔹 Use with Functions:
+Returning values based on conditionals
+Conditional flow in functions
+
+🔹 Match-Case (Python 3.10+):
+Similar to switch-case in other languages
+
+✅ 2. Loops (Iteration)
+🔹 for Loop:
+Basic for loop with range
+Looping through strings, lists, tuples, dictionaries, sets
+Loop with enumerate()
+Loop with zip()
+Loop with range(start, stop, step)
+
+🔹 while Loop:
+Basic while loop
+Infinite loops and loop conditions
+while with counters
+
+🔹 Loop Control Statements:
+break
+continue
+pass
+
+🔹 Nested Loops:
+for inside for
+while inside for (and vice versa)
+
+🔹 else with Loops:
+for-else
+while-else
+
+💡 else in loops executes only when the loop completes normally (not via break)
+
+🔹 Looping through:
+Strings (character by character)
+Lists
+Tuples
+Dictionaries (keys, values, items)
+Sets
+
+✅ Optional & Advanced Concepts
+🔹 Comprehensions (brief mention if loops are strong):
+List comprehension
+Set & dictionary comprehension
+
+🔹 Practical Examples:
+Factorial using loop
+Prime number checker
+Fibonacci series
+Multiplication tables
+Pattern printing using nested loops
+Summation of digits, reversing number, etc.
+
+📘 Tips:
+Always practice writing for and while with real-world examples
+Understand when to use break and continue for clean logic
+Try converting a while loop to a for loop and vice versa
+Would you like detailed Python notes or example programs for each of these topics?
