@@ -243,6 +243,7 @@ So when print(x) tries to access it before the assignment, it raises an error.""
 
 ###❓ 3. What will be printed?
 
+
 a = [1, 2, 3]
 b = a
 a += [4, 5]
