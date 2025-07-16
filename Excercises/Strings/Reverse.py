@@ -61,3 +61,45 @@ print(reversed_s)  # Output: "olleh"
 
 reverse = lambda s: s[::-1]
 print(reverse("hello"))  # Output: "olleh"
+
+
+#✅ Example:
+#Input: "Hello World from Python"
+#Output: "olleH dlroW morf nohtyP"
+
+#✅ 1. Using List Comprehension
+
+sentence = "Hello World from Python"
+reversed_words = ' '.join([word[::-1] for word in sentence.split()])
+print(reversed_words)
+# Output: "olleH dlroW morf nohtyP"
+
+
+#✅ 2. Using Loop
+
+sentence = "Hello World from Python"
+words = sentence.split()
+reversed_words = []
+for word in words:
+    reversed_words.append(word[::-1])
+result = ' '.join(reversed_words)
+print(result)
+# Output: "olleH dlroW morf nohtyP"
+
+
+#✅ 3. Using map() Function=
+sentence = "Hello World from Python"
+reversed_words = ' '.join(map(lambda w: w[::-1], sentence.split()))
+print(reversed_words)
+# Output: "olleH dlroW morf nohtyP"
+
+#✅ 4. With Punctuation Handling (Optional Enhancement)
+"If your sentence includes punctuation, use regex to preserve it properly:"
+
+import re
+
+sentence = "Hello, world! Let's code."
+words = re.findall(r'\b\w+\b|\W+', sentence)
+reversed_sentence = ''.join([w[::-1] if w.isalnum() else w for w in words])
+print(reversed_sentence)
+# Output: "olleH, dlrow! s'teL edoc."
