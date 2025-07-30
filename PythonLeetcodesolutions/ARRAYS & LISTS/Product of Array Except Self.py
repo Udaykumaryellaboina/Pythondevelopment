@@ -1,41 +1,36 @@
-
 # 🧩 Leetcode 238: Product of Array Except Self
-## 🔶 **Problem Statement**
 
-'''Given an array of integers `nums`, return an array `answer` such that:
+# 🔶 Problem Statement:
+'''
+Given an array of integers `nums`, return an array `answer` such that:
 answer[i] = product of all elements in nums except nums[i]
 
-### 🔒 Constraints:
+Constraints:
+* You cannot use division.
+* Solution must run in O(n) time.
+* Try to achieve O(1) extra space (excluding the output array).
+'''
 
-* You **cannot use division**.
-* Solution must run in **O(n)** time.
-* Try to achieve **O(1) extra space** (excluding the output array).
+# 🧪 Example:
+# Input: nums = [1, 2, 3, 4]
+# Output: [24, 12, 8, 6]
 
-## 🧪 Example 1:
-**Input:**
-nums = [1, 2, 3, 4]
-**Output:**
+# Explanation:
+# answer[0] = 2×3×4 = 24
+# answer[1] = 1×3×4 = 12
+# answer[2] = 1×2×4 = 8
+# answer[3] = 1×2×3 = 6
 
-[24, 12, 8, 6]
+# ------------------------------------------------------------------------------
+# ✅ Approach 1: Brute Force (O(n²) Time)
+# ------------------------------------------------------------------------------
+'''
+Idea:
+Loop through the array for each element `i` and calculate the product of all elements
+except at `i`.
+'''
 
-**Explanation:**
-
-* answer\[0] = 2×3×4 = 24
-* answer\[1] = 1×3×4 = 12
-* answer\[2] = 1×2×4 = 8
-* answer\[3] = 1×2×3 = 6
-
----
-
-## ✅ Approach 1: Brute Force (O(n²) Time)
-
-### 🔧 Idea:
-
-Loop through the array for each element `i` and calculate the product of all elements **except** at `i`.
-
-### 🧾 Code:'''
-
-class Solution:
+class SolutionBruteForce:
     def productExceptSelf(self, nums):
         n = len(nums)
         ans = [1] * n
@@ -44,35 +39,29 @@ class Solution:
                 if i != j:
                     ans[i] *= nums[j]
         return ans
+
 '''
-### 📊 Time & Space:
+Time: O(n²)
+Space: O(1) extra (excluding the output array)
 
-* **Time:** O(n²) → inefficient for large arrays.
-* **Space:** O(1) extra (excluding the output array).
+Pros:
+- Easy to understand
 
-### ✅ Pros:
+Cons:
+- Very slow for large inputs. Will result in TLE (Time Limit Exceeded).
+'''
 
-* Easy to understand.
+# ------------------------------------------------------------------------------
+# ✅ Approach 2: Prefix and Suffix Arrays (O(n) Time, O(n) Space)
+# ------------------------------------------------------------------------------
+'''
+Idea:
+Compute prefix[i] = product of all elements before i
+Compute suffix[i] = product of all elements after i
+Then, answer[i] = prefix[i] * suffix[i]
+'''
 
-### ❌ Cons:
-
-* Very slow for large inputs. Will result in **TLE** (Time Limit Exceeded) in interviews or contests.
-
-
-## ✅ Approach 2: Prefix and Suffix Arrays (O(n) Time, O(n) Space)
-
-### 🔧 Idea:
-
-* Compute:
-
-  * `prefix[i]` = product of all elements before index `i`
-  * `suffix[i]` = product of all elements after index `i`
-* Then:
-  `answer[i] = prefix[i] * suffix[i]`
-
-### 🧾 Code:'''
-
-class Solution:
+class SolutionPrefixSuffix:
     def productExceptSelf(self, nums):
         n = len(nums)
         prefix = [1] * n
@@ -90,37 +79,29 @@ class Solution:
 
         return ans
 
-
-### 📊 Time & Space:
 '''
-* **Time:** O(n)
-* **Space:** O(n) extra for `prefix` and `suffix`
+Time: O(n)
+Space: O(n) extra for prefix and suffix arrays
 
-### ✅ Pros:
+Pros:
+- Fast and efficient
+- Easier to debug than the optimal space version
 
-* Fast and efficient
-* Easier to debug than the constant space version
+Cons:
+- Uses O(n) additional space
+'''
 
-### ❌ Cons:
+# ------------------------------------------------------------------------------
+# ✅ Approach 3: Optimal (O(n) Time, O(1) Space)
+# ------------------------------------------------------------------------------
+'''
+Idea:
+- Use the result array to store prefix products
+- Traverse the array in reverse using a variable `suffix` to hold the product
+  of all elements after the current index, and multiply it into the result
+'''
 
-* Uses O(n) additional space
-
----
-
-## ✅ Approach 3: Optimal - Prefix in Result + Suffix with Variable (O(n) Time, O(1) Space)
-
-### 🔧 Idea:
-
-* First pass:
-
-  * Store prefix products directly in the result array.
-* Second pass:
-
-  * Traverse backward with a single `suffix` variable to update each result.
-
-### 🧾 Code:'''
-
-class Solution:
+class SolutionOptimal:
     def productExceptSelf(self, nums):
         n = len(nums)
         ans = [1] * n
@@ -137,37 +118,41 @@ class Solution:
 
         return ans
 
-
-### 📊 Time & Space:
 '''
-* **Time:** O(n)
-* **Space:** O(1) extra (output array not counted)
+Time: O(n)
+Space: O(1) extra (output array is excluded from space complexity)
 
-### ✅ Pros:
+Pros:
+- Fastest and most space-efficient
+- Best for interviews and real-world applications
 
-* Fastest and most space-efficient.
-* Best solution for interviews and real-world use.
+Cons:
+- Slightly more complex than previous versions
+'''
 
-### ❌ Cons:
+# ------------------------------------------------------------------------------
+# 🏁 Summary: Which One to Choose?
+# ------------------------------------------------------------------------------
 
-* Slightly more complex to understand at first glance.
-
----
-
-## 🏁 Which One to Choose?
-
+'''
 | Approach                    | Time   | Space  | Use In Interview? | When to Use?                           |
 | --------------------------- | ------ | ------ | ----------------- | -------------------------------------- |
 | 1. Brute Force              | O(n²)  | O(1)   | ❌ No              | Never (just for learning)              |
 | 2. Prefix & Suffix Arrays   | O(n)   | O(n)   | ✅ Maybe           | When readability/debuggability matters |
 | 3. Optimal (Constant Space) | ✅ O(n) | ✅ O(1) | ✅✅ Yes            | **Always prefer this**                 |
+'''
 
----
+# ✅ Final Recommendation:
+'''
+Use Approach 3 (Optimal): It is the most efficient and cleanest solution,
+meeting all constraints (O(n) time, O(1) space, no division).
+'''
 
-### ✅ Final Recommendation:
-
-Use **Approach 3**: It is the **most optimal solution**,
- meeting all constraints (O(n) time, O(1) space, no division).
-  It's also a common **interview-winning technique** that demonstrates strong problem-solving skills.'''
-
-
+# ------------------------------------------------------------------------------
+# ✅ Test Driver (Optional)
+# ------------------------------------------------------------------------------
+if __name__ == "__main__":
+    nums = [1, 2, 3, 4]
+    print("Brute Force:", SolutionBruteForce().productExceptSelf(nums))
+    print("Prefix-Suffix:", SolutionPrefixSuffix().productExceptSelf(nums))
+    print("Optimal:", SolutionOptimal().productExceptSelf(nums))
