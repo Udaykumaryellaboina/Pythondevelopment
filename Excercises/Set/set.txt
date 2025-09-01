@@ -1,0 +1,100 @@
+Perfect 👍 You want a **complete list of coding questions on Python Sets**.
+Since sets are **unordered, mutable, and store unique elements**, interviewers often test **set operations, mathematical use cases, and real-world applications**.
+
+I’ll structure them into **basics → operations → mathematical set ops → transformations → real-world → tricky**.
+
+---
+
+# 🔹 Basics (Warm-up)
+
+1. Create a set and print its elements.
+2. Find the length of a set.
+3. Check if an element exists in a set.
+4. Add an element to a set.
+5. Add multiple elements to a set (`update`).
+6. Remove an element from a set (`remove`, `discard`).
+7. Remove and return a random element (`pop`).
+8. Clear all elements from a set.
+9. Convert a list into a set.
+10. Convert a tuple into a set.
+
+---
+
+# 🔹 Operations on Sets
+
+11. Iterate through elements of a set.
+12. Find the maximum element in a numeric set.
+13. Find the minimum element in a numeric set.
+14. Find the sum of all elements.
+15. Find the product of all elements.
+16. Check if all elements in a set are even.
+17. Check if all elements in a set are unique (trivial for set).
+18. Convert a set into a list.
+19. Convert a set into a tuple.
+20. Sort elements of a set.
+
+---
+
+# 🔹 Mathematical Set Operations
+
+21. Find union of two sets.
+22. Find intersection of two sets.
+23. Find difference between two sets.
+24. Find symmetric difference between two sets.
+25. Check if one set is subset of another.
+26. Check if one set is superset of another.
+27. Check if two sets are disjoint.
+28. Find common elements in three or more sets.
+29. Find elements present in exactly one of the sets.
+30. Count elements in union of two or more sets.
+
+---
+
+# 🔹 Transformations & Advanced
+
+31. Remove duplicates from a list using set.
+32. Remove duplicates from a string using set.
+33. Find unique words in a sentence.
+34. Count distinct characters in a string.
+35. Count distinct numbers in a list.
+36. Convert a dictionary’s keys into a set.
+37. Convert a dictionary’s values into a set.
+38. Convert a list of tuples into a set.
+39. Convert a set of tuples into a dictionary.
+40. Use set comprehension to create a new set.
+
+---
+
+# 🔹 Real-world / Practical
+
+41. Find all vowels present in a string.
+42. Find missing numbers from a given range.
+43. Find duplicate elements in a list using set.
+44. Check if two strings are anagrams using sets.
+45. Find common letters in two strings.
+46. Find unique letters from two strings.
+47. Check if a sentence is a pangram (contains all alphabets).
+48. Store unique IP addresses from a log file.
+49. Find intersection of student subjects (Math ∩ Science).
+50. Find union of multiple friend groups.
+
+---
+
+# 🔹 Tricky / Interview Favorites
+
+51. Find elements present in first list but not second.
+52. Find symmetric difference between two lists using sets.
+53. Find longest word with unique characters using set.
+54. Find pair of numbers whose sum exists in set.
+55. Find numbers present in exactly two out of three sets.
+56. Partition a list into unique and duplicate elements using set.
+57. Check if two sets are equal without using `==`.
+58. Check if one string is a subsequence of another using set logic.
+59. Use frozenset as a dictionary key.
+60. Implement a simple spell-checker using set of dictionary words.
+
+---
+
+✅ That’s **60 coding questions on Python Sets** covering basics, operations, math set theory, transformations, practical problems, and tricky interview favorites.
+
+Would you like me to also **shortlist the Top 20 set questions most commonly asked in Python interviews** so you can focus on them first?

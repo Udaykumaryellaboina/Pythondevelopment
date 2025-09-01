@@ -1,0 +1,115 @@
+Perfect 👍 You want a **comprehensive set of coding questions on Python Dictionaries**.
+Dictionaries are one of the **most common interview topics** in Python because they combine **hashing, key-value pairs, and efficient lookups**.
+
+I’ll organize them into **basics → operations → searching/sorting → advanced → real-world → tricky**.
+
+---
+
+# 🔹 Basics (Warm-up)
+
+1. Create a dictionary and print its keys and values.
+2. Add a key-value pair to a dictionary.
+3. Update the value of a key.
+4. Remove a key-value pair from a dictionary.
+5. Check if a key exists in a dictionary.
+6. Iterate through keys, values, and key-value pairs.
+7. Find the length of a dictionary.
+8. Merge two dictionaries.
+9. Copy a dictionary (shallow vs deep copy).
+10. Clear a dictionary.
+
+---
+
+# 🔹 Operations & Transformations
+
+11. Get the value of a key (with and without default).
+12. Convert two lists into a dictionary.
+13. Convert a dictionary into two lists (keys list & values list).
+14. Convert a list of tuples into a dictionary.
+15. Convert a dictionary to a list of tuples.
+16. Create a dictionary with default values (`fromkeys`).
+17. Create a nested dictionary.
+18. Access values in a nested dictionary.
+19. Flatten a nested dictionary.
+20. Swap keys and values in a dictionary.
+
+---
+
+# 🔹 Searching & Sorting
+
+21. Find the key with the maximum value.
+22. Find the key with the minimum value.
+23. Find the value with the maximum frequency.
+24. Sort a dictionary by keys.
+25. Sort a dictionary by values.
+26. Sort a dictionary in descending order.
+27. Check if two dictionaries are equal.
+28. Find common keys in two dictionaries.
+29. Find keys present in one dictionary but not another.
+30. Remove duplicates from dictionary values.
+
+---
+
+# 🔹 Mathematical & Frequency-based
+
+31. Count frequency of elements in a list using dictionary.
+32. Count frequency of characters in a string.
+33. Count frequency of words in a sentence.
+34. Find the most frequent word in a sentence.
+35. Find the least frequent word in a sentence.
+36. Find all keys with a given value.
+37. Group elements of a list by their frequency.
+38. Check if two strings are anagrams using dictionary.
+39. Check if two dictionaries are inverses of each other.
+40. Create an adjacency list representation of a graph using dictionary.
+
+---
+
+# 🔹 Advanced Dictionary Operations
+
+41. Nested dictionary comprehension.
+42. Dictionary comprehension with condition.
+43. Filter dictionary by keys.
+44. Filter dictionary by values.
+45. Merge list of dictionaries into a single dictionary.
+46. Invert a dictionary with duplicate values (map values to list of keys).
+47. Remove keys with None or empty values.
+48. Check if a dictionary is empty.
+49. Use `defaultdict` for missing keys.
+50. Use `Counter` from `collections` for frequency counting.
+
+---
+
+# 🔹 Real-world / Practical
+
+51. Count occurrences of each character in a file.
+52. Count occurrences of each word in a file.
+53. Store student names with their marks.
+54. Find the student with the highest marks.
+55. Group employees by department.
+56. Store cities and their populations, find top k cities.
+57. Create a dictionary from JSON data.
+58. Serialize dictionary to JSON (and back).
+59. Count votes in an election (vote tally).
+60. Implement phonebook using dictionary.
+
+---
+
+# 🔹 Tricky / Interview Favorites
+
+61. Check if a dictionary is a subset of another.
+62. Merge dictionaries with sum of values for common keys.
+63. Convert a list of key-value pairs into nested dictionary.
+64. Find difference between two dictionaries.
+65. Find symmetric difference of two dictionaries.
+66. Check if dictionary is symmetric (key\:value == value\:key).
+67. Convert dictionary of lists to list of dictionaries.
+68. Find duplicate values across multiple dictionaries.
+69. Implement LRU Cache using dictionary + linked list.
+70. Implement word frequency counter (like search engines).
+
+---
+
+✅ That’s **70 coding questions on Python Dictionaries** covering basics, operations, frequency, sorting, advanced use cases, and real-world interview favorites.
+
+Would you like me to also **separate out the Top 20 dictionary questions most frequently asked in Python interviews** so you can practice those first?

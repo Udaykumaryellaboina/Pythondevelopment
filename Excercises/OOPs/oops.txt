@@ -1,0 +1,115 @@
+Great 👍 You want a **comprehensive list of coding questions on Object-Oriented Programming (OOPs)**.
+Since **OOP** is one of the most important topics in **Python, Java, C++, and other languages**, interviews focus on **class design, inheritance, polymorphism, encapsulation, abstraction, design patterns, and real-world problems**.
+
+I’ll organize them into **Basics → Inheritance/Polymorphism → Encapsulation/Abstraction → Advanced Design → Real-world Problems → Tricky/Patterns**.
+
+---
+
+# 🔹 Basics (Class & Objects)
+
+1. Create a class and an object.
+2. Write a class with a constructor (`__init__` in Python).
+3. Create multiple objects of the same class.
+4. Add instance variables and access them.
+5. Add class variables (static variables).
+6. Differentiate between class and instance variables.
+7. Define methods inside a class.
+8. Call methods using objects.
+9. Demonstrate `__str__` / `toString()` method.
+10. Show destructor (`__del__`) in Python or finalize in Java.
+
+---
+
+# 🔹 Inheritance
+
+11. Implement single inheritance.
+12. Implement multilevel inheritance.
+13. Implement multiple inheritance.
+14. Use `super()` to call parent class constructor.
+15. Override a parent class method.
+16. Demonstrate method resolution order (MRO).
+17. Check `isinstance()` and `issubclass()` usage.
+18. Show constructor chaining in inheritance.
+19. Create hierarchical inheritance.
+20. Hybrid inheritance example.
+
+---
+
+# 🔹 Polymorphism
+
+21. Implement method overloading (using default args in Python, actual overloading in Java).
+22. Implement operator overloading (`__add__`, `__eq__`).
+23. Demonstrate runtime polymorphism (method overriding).
+24. Demonstrate duck typing in Python.
+25. Implement function overriding with `super()`.
+26. Show polymorphism with abstract methods.
+27. Write a program that accepts different objects (shapes, animals) and calls their methods.
+28. Demonstrate interface-based polymorphism (Java/C++).
+29. Show polymorphism with iterators.
+30. Show polymorphism with magic methods (`__len__`, `__getitem__`).
+
+---
+
+# 🔹 Encapsulation & Abstraction
+
+31. Create a class with private variables (`__var`).
+32. Access private variables using getter and setter methods.
+33. Use `@property` decorator for encapsulation (Python).
+34. Demonstrate abstraction using abstract base class (`ABC` in Python).
+35. Demonstrate abstract class in Java.
+36. Implement multiple abstract methods in a class.
+37. Show interface implementation in Java/C++.
+38. Encapsulation example: Bank account with deposit/withdraw methods.
+39. Demonstrate protected members.
+40. Show name mangling in Python (`_classname__var`).
+
+---
+
+# 🔹 Advanced Design & Relationships
+
+41. Class vs Object vs Instance difference.
+42. Demonstrate composition (“has-a” relationship).
+43. Demonstrate aggregation.
+44. Show dependency injection.
+45. Show static methods vs class methods.
+46. Demonstrate factory method.
+47. Implement singleton class.
+48. Implement a copy constructor (or `__copy__`).
+49. Show deep copy vs shallow copy in objects.
+50. Show operator overloading for custom sorting.
+
+---
+
+# 🔹 Real-world OOP Problems
+
+51. Design a class for a Bank Account.
+52. Design classes for different types of Employees (Manager, Developer).
+53. Design a Student class with marks, and find topper.
+54. Design a Library Management System using OOP.
+55. Design a simple ATM system.
+56. Design a Vehicle class with Car, Bike as subclasses.
+57. Design a Shape class with Circle, Rectangle, Triangle.
+58. Implement a Shopping Cart using OOP.
+59. Implement a Ticket Booking System.
+60. Implement a simple File Handling system with OOP.
+
+---
+
+# 🔹 Tricky & Interview Favorites
+
+61. Difference between `@staticmethod`, `@classmethod`, and instance methods.
+62. Create a class that restricts creation of multiple objects (Singleton).
+63. Implement method chaining in classes.
+64. Show operator overloading for custom class (`==`, `<`, `>`).
+65. Create immutable class objects.
+66. Design an Observer pattern.
+67. Implement Strategy design pattern.
+68. Show dependency inversion principle.
+69. Show polymorphism with abstract + concrete classes.
+70. Demonstrate SOLID principles with examples.
+
+---
+
+✅ That’s **70 coding questions on OOPs** covering **class basics, inheritance, polymorphism, encapsulation, abstraction, advanced design, real-world projects, and tricky interview favorites**.
+
+Do you want me to also **separate out the Top 25 OOPs coding questions that interviewers ask most frequently** (across Python/Java/C++) so you can focus on those first?

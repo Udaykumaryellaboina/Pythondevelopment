@@ -1,0 +1,115 @@
+Got it 👍 You want a **complete collection of coding questions on Python Tuples**.
+Since **tuples are immutable** in Python, interview questions often test your understanding of immutability, indexing, packing/unpacking, and transformations.
+
+I’ll organize them into **basics → indexing/slicing → transformations → advanced → real-world → tricky**.
+
+---
+
+# 🔹 Basics (Warm-up)
+
+1. Create a tuple and print its elements.
+2. Find the length of a tuple (without using `len()`).
+3. Access elements using index.
+4. Access elements using slicing.
+5. Iterate through a tuple.
+6. Check if an element exists in a tuple.
+7. Count occurrences of an element.
+8. Find index of an element.
+9. Concatenate two tuples.
+10. Repeat a tuple n times.
+
+---
+
+# 🔹 Indexing, Slicing & Nested Tuples
+
+11. Access the first and last element of a tuple.
+12. Access elements from a nested tuple.
+13. Reverse a tuple.
+14. Extract a sub-tuple using slicing.
+15. Convert a tuple into a string.
+16. Convert a string into a tuple of characters.
+17. Check if a tuple is symmetric (palindrome).
+18. Find the maximum element in a numeric tuple.
+19. Find the minimum element in a numeric tuple.
+20. Find the sum of all numeric elements in a tuple.
+
+---
+
+# 🔹 Transformations (Immutable Tricks)
+
+21. Convert tuple to list, modify it, and back to tuple.
+22. Replace an element in a tuple.
+23. Add an element to a tuple.
+24. Remove an element from a tuple.
+25. Merge multiple tuples into one.
+26. Flatten a nested tuple.
+27. Remove duplicates from a tuple.
+28. Sort elements of a tuple.
+29. Sort a tuple of tuples by the first element.
+30. Sort a tuple of tuples by the second element.
+
+---
+
+# 🔹 Packing & Unpacking
+
+31. Unpack a tuple into variables.
+32. Swap two numbers using tuple unpacking.
+33. Unpack nested tuples.
+34. Use `*args` to accept variable-length tuples in functions.
+35. Pack multiple values into a tuple.
+36. Unpack a tuple inside a loop.
+37. Use tuple unpacking in multiple assignments.
+38. Assign default values when unpacking a tuple.
+39. Use `_` in tuple unpacking to ignore values.
+40. Extended unpacking (`a, *b, c`).
+
+---
+
+# 🔹 Advanced Tuple Operations
+
+41. Check if two tuples are equal.
+42. Check if one tuple is a subset of another.
+43. Find common elements between two tuples.
+44. Find difference between two tuples.
+45. Zip two lists into a tuple of pairs.
+46. Convert a dictionary into a tuple of key-value pairs.
+47. Convert a tuple of key-value pairs into a dictionary.
+48. Find frequency of each element in a tuple.
+49. Count distinct elements in a tuple.
+50. Find intersection and union of two tuples.
+
+---
+
+# 🔹 Real-world / Practical
+
+51. Store coordinates as tuples (x, y).
+52. Store RGB values as tuples.
+53. Store student (name, age, grade) as a tuple.
+54. Find student with the highest grade from a list of tuples.
+55. Sort employees by salary from a list of (name, salary).
+56. Find the oldest person from a list of (name, age).
+57. Group data by first element of tuple.
+58. Use tuple as dictionary key.
+59. Use tuple as set element.
+60. Generate list of (index, value) pairs from a tuple.
+
+---
+
+# 🔹 Tricky / Interview Favorites
+
+61. Check if a tuple is hashable.
+62. Check if all elements in a tuple are identical.
+63. Find the most frequent element in a tuple.
+64. Find the least frequent element in a tuple.
+65. Merge two sorted tuples into one sorted tuple.
+66. Find kth smallest element in a tuple.
+67. Find kth largest element in a tuple.
+68. Find tuple with maximum sum in a list of tuples.
+69. Find tuple with minimum sum in a list of tuples.
+70. Create a tuple of squares of numbers.
+
+---
+
+✅ That’s **70 coding questions on Python Tuples** covering basics, indexing, transformations, packing/unpacking, advanced, and real-world use cases.
+
+Would you like me to also **separate out the Top 20 tuple questions most commonly asked in Python interviews** so you can focus first on those?

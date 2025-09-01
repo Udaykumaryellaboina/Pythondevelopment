@@ -1,0 +1,130 @@
+Perfect 👌 You now want a **comprehensive list of coding questions on NumPy arrays**.
+These are very common in **Python + Data Science + ML + QA automation interviews** since NumPy is the foundation for data manipulation.
+
+I’ll break them into **categories: Basics → Indexing/Slicing → Math/Stats → Reshaping → Advanced**.
+
+---
+
+# 🔹 Basics (Creation & Properties)
+
+1. Create a NumPy array from a Python list/tuple.
+2. Create an array of all zeros, all ones, or a constant value.
+3. Create an identity matrix.
+4. Create an array of random numbers (uniform, normal, integers).
+5. Create an array with evenly spaced numbers (`arange`, `linspace`).
+6. Check the shape, size, and data type of an array.
+7. Convert data type of an array (astype).
+8. Flatten a 2D array to 1D.
+9. Create a diagonal matrix.
+10. Copy vs View in NumPy – demonstrate difference.
+
+---
+
+# 🔹 Indexing & Slicing
+
+11. Access a specific element, row, or column.
+12. Slice a 1D and 2D array.
+13. Reverse an array (rows/columns).
+14. Boolean indexing: extract all elements greater than a value.
+15. Fancy indexing: extract using an index list.
+16. Replace all negative numbers with zero.
+17. Extract odd and even numbers from an array.
+18. Get all unique elements in an array.
+19. Find indices of non-zero elements.
+20. Check if a value exists in an array.
+
+---
+
+# 🔹 Mathematical Operations
+
+21. Add, subtract, multiply, divide two arrays.
+22. Scalar addition, multiplication.
+23. Element-wise square root, log, exp.
+24. Dot product of two arrays.
+25. Matrix multiplication (`@` or `dot`).
+26. Compute mean, median, variance, std deviation.
+27. Find min, max, sum across rows/columns.
+28. Normalize an array (feature scaling).
+29. Standardize an array (z-score).
+30. Compute correlation coefficient matrix.
+
+---
+
+# 🔹 Reshaping & Combining
+
+31. Reshape a 1D array into 2D.
+32. Stack two arrays horizontally (`hstack`) and vertically (`vstack`).
+33. Split an array into equal parts.
+34. Repeat elements of an array.
+35. Tile an array.
+36. Concatenate multiple arrays.
+37. Insert, delete, or append elements in an array.
+38. Expand dimensions (`newaxis`, `expand_dims`).
+39. Squeeze dimensions (remove single dimension).
+40. Transpose a matrix.
+
+---
+
+# 🔹 Searching, Sorting & Filtering
+
+41. Sort an array (ascending/descending).
+42. Sort along axis.
+43. Get indices that would sort an array (`argsort`).
+44. Find kth smallest/largest element.
+45. Find the index of max/min element (`argmax`, `argmin`).
+46. Find common elements of two arrays.
+47. Find difference between two arrays.
+48. Find intersection and union of arrays.
+49. Remove duplicates from an array.
+50. Replace elements using `where`.
+
+---
+
+# 🔹 Linear Algebra
+
+51. Compute determinant of a matrix.
+52. Compute inverse of a matrix.
+53. Compute eigenvalues and eigenvectors.
+54. Solve a system of linear equations.
+55. Perform singular value decomposition (SVD).
+56. QR decomposition of a matrix.
+57. LU decomposition.
+58. Rank of a matrix.
+59. Check if a matrix is symmetric.
+60. Check if a matrix is orthogonal.
+
+---
+
+# 🔹 Advanced NumPy
+
+61. Generate a random permutation of array elements.
+62. Shuffle rows of a 2D array.
+63. Broadcast two arrays of different shapes.
+64. Apply a custom function to all elements (`vectorize`).
+65. Use `meshgrid` to generate coordinate matrices.
+66. Create a block matrix (`block`, `bmat`).
+67. Compute cumulative sum (`cumsum`) and cumulative product (`cumprod`).
+68. Find moving average of an array.
+69. Memory efficiency: check `nbytes`.
+70. Use `einsum` for tensor operations.
+
+---
+
+# 🔹 Real-world Data Handling
+
+71. Read data from a CSV into a NumPy array.
+72. Save an array to `.npy` file.
+73. Load an array from `.npy` file.
+74. Save/load from `.txt` or `.csv`.
+75. Convert a Pandas DataFrame column to NumPy array.
+76. Filter NaN values from an array.
+77. Replace NaN with mean/median.
+78. Normalize image pixel data (0–255 → 0–1).
+79. Compute cosine similarity between vectors.
+80. Implement K-Nearest Neighbors (KNN) distance using NumPy.
+
+---
+
+✅ That’s **80 coding questions on NumPy arrays** covering **creation, indexing, math, reshaping, sorting, linear algebra, advanced ops, and real-world tasks**.
+
+Would you like me to also **separate Top 25 NumPy array questions most asked in interviews** so you can focus first on those before diving into all 80?

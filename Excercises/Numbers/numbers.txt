@@ -1,0 +1,129 @@
+Got it 👍 You want a **complete collection of coding interview questions on Numbers**.
+These include problems on **digits, primes, math tricks, bitwise, and number theory**.
+I’ll organize them by **level & category** for clarity.
+
+---
+
+# 🔹 Basic Number Problems
+
+1. Check if a number is even or odd.
+2. Find the largest of three numbers.
+3. Swap two numbers without using a third variable.
+4. Find the sum of digits of a number.
+5. Reverse a number.
+6. Check if a number is a palindrome.
+7. Find the factorial of a number (iterative & recursive).
+8. Count the number of digits in a number.
+9. Find the GCD (HCF) of two numbers.
+10. Find the LCM of two numbers.
+
+---
+
+# 🔹 Prime Numbers
+
+11. Check if a number is prime.
+12. Print all prime numbers up to `n`.
+13. Find the nth prime number.
+14. Prime factorization of a number.
+15. Find the largest prime factor.
+16. Count total prime factors of a number.
+17. Check if a number is a twin prime.
+18. Check if a number is a Sophie Germain prime.
+19. Check if two numbers are co-prime.
+20. Implement Sieve of Eratosthenes.
+
+---
+
+# 🔹 Special Numbers
+
+21. Check if a number is an Armstrong number.
+22. Check if a number is a Strong number.
+23. Check if a number is a Perfect number.
+24. Check if a number is a Harshad (Niven) number.
+25. Check if a number is a Neon number.
+26. Check if a number is a Spy number.
+27. Check if a number is a Duck number.
+28. Check if a number is an Automorphic number.
+29. Check if a number is a Magic number.
+30. Check if a number is a Happy number.
+
+---
+
+# 🔹 Fibonacci & Series
+
+31. Print Fibonacci series up to `n`.
+32. Find nth Fibonacci number (recursive, DP, formula).
+33. Check if a number is in Fibonacci sequence.
+34. Sum of first n natural numbers.
+35. Sum of first n even numbers.
+36. Sum of first n odd numbers.
+37. Find the nth triangular number.
+38. Find the nth Catalan number.
+39. Pascal’s triangle generation.
+40. Count number of ways to climb stairs (Fibonacci variation).
+
+---
+
+# 🔹 Digit / Representation Problems
+
+41. Convert decimal to binary.
+42. Convert binary to decimal.
+43. Convert decimal to octal.
+44. Convert decimal to hexadecimal.
+45. Count number of set bits (1s) in binary representation.
+46. Reverse bits of a number.
+47. Check if a number is a power of 2.
+48. Find the square root of a number (without using sqrt).
+49. Compute power (`a^b`) efficiently (fast exponentiation).
+50. Find the logarithm base 2 of a number (without log).
+
+---
+
+# 🔹 Mathematical / Logical
+
+51. Find the greatest of n numbers.
+52. Check if a number is a palindrome without converting to string.
+53. Find sum of first and last digit.
+54. Swap first and last digit.
+55. Find product of digits.
+56. Find digital root of a number.
+57. Count trailing zeros in factorial of n.
+58. Compute nCr (combinations).
+59. Compute nPr (permutations).
+60. Implement Euclidean algorithm for GCD.
+
+---
+
+# 🔹 Advanced / Tricky
+
+61. Find all Armstrong numbers in a range.
+62. Find all prime numbers in a range using Sieve.
+63. Count primes less than n.
+64. Check if a number is power of another number.
+65. Find the sum of divisors of a number.
+66. Count total divisors of a number.
+67. Find the highly composite number.
+68. Compute modular exponentiation.
+69. Implement fast GCD using Binary GCD Algorithm.
+70. Check if a number is a palindrome in all bases up to k.
+
+---
+
+# 🔹 Miscellaneous
+
+71. Convert number to words (e.g., 123 → “One Hundred Twenty Three”).
+72. Find the next greater number with same digits.
+73. Find the largest number formed by digits of given number.
+74. Check if digits are in increasing/decreasing order.
+75. Generate all possible numbers from given digits.
+76. Count numbers with unique digits up to n.
+77. Find the digital complement of a number.
+78. Check if sum of factorial of digits = number (Strong number).
+79. Check if sum of squares of digits reaches 1 (Happy number).
+80. Check if a number is a Kaprekar number.
+
+---
+
+✅ That’s **80 coding questions on Numbers** covering everything from **basic, primes, digits, special numbers, Fibonacci, representation, math tricks, and advanced problems**.
+
+Do you want me to also **separate out the most frequently asked (Top 20 in interviews)** so you can focus first on those?

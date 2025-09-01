@@ -1,0 +1,129 @@
+Great 👍 You want a **complete collection of interview coding questions on Python Lists**.
+Since lists are one of the most **common interview topics** (for both Python basics and problem-solving), I’ll structure them from **basic → intermediate → advanced → tricky**.
+
+---
+
+# 🔹 Basics (Warm-up)
+
+1. Create a list and print its elements.
+2. Find the length of a list (without using `len()`).
+3. Access elements using index & slicing.
+4. Add an element to the end (`append`).
+5. Insert an element at a given position.
+6. Remove an element from a list.
+7. Remove duplicates from a list.
+8. Reverse a list.
+9. Check if an element exists in a list.
+10. Count frequency of an element.
+
+---
+
+# 🔹 Searching & Sorting
+
+11. Find the maximum element in a list.
+12. Find the minimum element in a list.
+13. Find the second largest / second smallest element.
+14. Sort a list without using built-in functions.
+15. Implement binary search on a sorted list.
+16. Find the index of the first occurrence of an element.
+17. Find the index of the last occurrence of an element.
+18. Count how many times each element occurs.
+19. Find common elements in two lists.
+20. Find elements present in one list but not another.
+
+---
+
+# 🔹 Mathematical Operations
+
+21. Find the sum of all elements.
+22. Find the average of all elements.
+23. Find the product of all elements.
+24. Find the difference between max and min element.
+25. Find all pairs with sum equal to a given number.
+26. Find triplets with sum equal to a given number.
+27. Find the sublist with maximum sum (Kadane’s Algorithm).
+28. Find the longest increasing subsequence.
+29. Rotate a list by k positions.
+30. Shift all negative numbers to one side.
+
+---
+
+# 🔹 Slicing & Transformations
+
+31. Split a list into two halves.
+32. Merge two sorted lists into one sorted list.
+33. Flatten a nested list.
+34. Find the intersection of multiple lists.
+35. Find the union of multiple lists.
+36. Remove empty sublists.
+37. Replace all occurrences of an element with another.
+38. Find the longest string in a list of strings.
+39. Sort a list of strings by length.
+40. Sort a list of strings alphabetically.
+
+---
+
+# 🔹 Advanced List Operations
+
+41. Find sublists with a given sum.
+42. Generate all sublists of a list.
+43. Generate all permutations of a list.
+44. Generate all combinations of a list.
+45. Find the Cartesian product of two lists.
+46. Implement a stack using a list.
+47. Implement a queue using a list.
+48. Implement priority queue using a list.
+49. Convert a list of characters into a string.
+50. Convert a string into a list of characters.
+
+---
+
+# 🔹 Real-world / Complex
+
+51. Remove all even numbers from a list.
+52. Remove all odd numbers from a list.
+53. Remove all prime numbers from a list.
+54. Find all prime numbers in a list.
+55. Find palindrome numbers in a list.
+56. Find duplicates in a list.
+57. Count unique elements in a list.
+58. Find frequency of elements (dict/Counter).
+59. Group anagrams from a list of strings.
+60. Find the longest common prefix in a list of strings.
+
+---
+
+# 🔹 Nested & 2D Lists
+
+61. Access elements of a 2D list.
+62. Transpose a 2D list (matrix).
+63. Rotate a 2D list (90 degrees).
+64. Find the sum of each row in a 2D list.
+65. Find the sum of each column in a 2D list.
+66. Find the diagonal sum of a 2D list.
+67. Flatten a 2D list.
+68. Multiply two 2D lists (matrix multiplication).
+69. Find maximum element in a 2D list.
+70. Search an element in a row-wise & column-wise sorted 2D list.
+
+---
+
+# 🔹 Tricky / Interview Favorites
+
+71. Find equilibrium index (sum left = sum right).
+72. Find leader elements (greater than all to the right).
+73. Move all zeros to the end.
+74. Rearrange positive and negative numbers alternately.
+75. Rearrange list in wave form.
+76. Find the smallest missing positive number.
+77. Find the majority element (> n/2 times).
+78. Find elements occurring more than n/3 times.
+79. Count inversions in a list.
+80. Implement merge intervals problem using lists.
+
+---
+
+✅ That’s **80 coding questions on Lists** covering basics, searching, sorting, slicing, advanced, nested, and tricky problems.
+These overlap with **arrays**, but since Python lists are dynamic, many real interview questions focus on **nested lists, transformations, and frequency-based problems**.
+
+Do you want me to also **shortlist the Top 20 list questions most asked in Python interviews** so you can practice those first?

@@ -1,0 +1,104 @@
+Perfect 👍 You want a **complete collection of interview coding questions on Strings**.
+Just like arrays, I’ll organize them from **beginner → advanced → tricky** so you can practice step by step.
+
+---
+
+## 🔹 Beginner Level (Basics)
+
+1. Reverse a string.
+2. Check if a string is a palindrome.
+3. Find the length of a string (without using built-in functions).
+4. Count vowels and consonants in a string.
+5. Convert string to uppercase/lowercase.
+6. Remove whitespaces from a string.
+7. Count the frequency of each character.
+8. Find the first non-repeating character.
+9. Replace spaces with `%20` (URLify).
+10. Compare two strings (without using built-in comparison).
+
+---
+
+## 🔹 Substrings / Subsequence
+
+11. Find all substrings of a string.
+12. Find the longest substring without repeating characters.
+13. Find the longest palindromic substring.
+14. Find the longest common prefix.
+15. Find the longest common subsequence (LCS).
+16. Find the edit distance (Levenshtein distance).
+17. Generate all permutations of a string.
+18. Generate all combinations of characters.
+19. Check if one string is a subsequence of another.
+20. Smallest window in a string containing all characters of another.
+
+---
+
+## 🔹 Pattern Matching
+
+21. Implement **Naive Pattern Matching**.
+22. Implement **KMP Algorithm**.
+23. Implement **Rabin-Karp Algorithm**.
+24. Implement **Z Algorithm**.
+25. Find all occurrences of a substring in a string.
+26. Check if a string is a rotation of another.
+27. Check if two strings are anagrams.
+28. Group anagrams together.
+29. Check if two strings are isomorphic.
+30. Check if two strings are scrambled versions of each other.
+
+---
+
+## 🔹 Advanced String Manipulations
+
+31. Find the longest repeating substring.
+32. Find the lexicographically smallest and largest substring of length `k`.
+33. Find the minimum number of bracket reversals needed to balance a string.
+34. Validate balanced parentheses/brackets.
+35. Remove adjacent duplicates in a string.
+36. Encode and decode strings (Run Length Encoding).
+37. Implement atoi() function (string to integer).
+38. Implement strstr() (find substring).
+39. Convert integer to string (itoa).
+40. Find the longest word in a sentence.
+
+---
+
+## 🔹 Palindrome-based
+
+41. Find all palindromic substrings.
+42. Count the number of palindromic substrings.
+43. Check if a string can be rearranged into a palindrome.
+44. Find the minimum insertions to make a string palindrome.
+45. Palindrome partitioning (min cuts).
+
+---
+
+## 🔹 Special Interview Problems
+
+46. Longest substring with k unique characters.
+47. Remove all duplicate characters.
+48. Find smallest substring containing all unique characters.
+49. Find the first repeating character.
+50. Find the lexicographically next permutation of a string.
+51. Implement wildcard pattern matching (`?`, `*`).
+52. Implement regular expression matching (`.` and `*`).
+53. Find the longest duplicate substring (using suffix array / suffix tree).
+54. Reverse words in a sentence.
+55. Check if one string is a subsequence of another.
+
+---
+
+## 🔹 Miscellaneous
+
+56. Check if two strings are rotations of each other (using concatenation trick).
+57. Check if string is numeric.
+58. Find the shortest string that contains two given strings as subsequences.
+59. Word break problem (can the string be segmented into dictionary words?).
+60. Print all valid IP addresses from a string of digits.
+
+---
+
+👉 That’s **60 most important string interview questions** across topics (palindrome, substring, anagram, regex, dynamic programming, etc.).
+These cover what companies like Google, Microsoft, Amazon, TCS, Infosys, and MNCs frequently ask.
+
+Do you want me to also **rank them by frequency (most asked in interviews)**, or directly start giving you **solutions in Python/Java/TypeScript** one by one?

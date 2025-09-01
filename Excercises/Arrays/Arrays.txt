@@ -1,0 +1,98 @@
+Got it 👍 You want a **comprehensive collection of interview coding questions on arrays**.
+I’ll break them into **categories** so you can practice from basics to advanced.
+
+---
+
+## 🔹 Beginner Level (Warm-ups)
+
+1. Find the largest element in an array.
+2. Find the smallest element in an array.
+3. Find the second largest / second smallest element.
+4. Reverse an array.
+5. Rotate an array left/right by `k` positions.
+6. Find the sum of elements in an array.
+7. Find the average of elements in an array.
+8. Count even and odd numbers.
+9. Check if an array is sorted (ascending/descending).
+10. Merge two sorted arrays into one sorted array.
+
+---
+
+## 🔹 Searching & Sorting
+
+11. Implement **Linear Search**.
+12. Implement **Binary Search** (iterative + recursive).
+13. Find the **first and last occurrence** of an element.
+14. Count occurrences of an element.
+15. Find missing number in `1…n`.
+16. Find duplicate number(s) in an array.
+17. Find all pairs in an array whose sum = `k`.
+18. Find triplets in an array whose sum = `k`.
+19. Sort an array using Bubble / Selection / Insertion Sort.
+20. Sort an array using Merge Sort / Quick Sort.
+
+---
+
+## 🔹 Subarray / Subsequence Problems
+
+21. Find the **maximum subarray sum** (Kadane’s Algorithm).
+22. Find the subarray with given sum `k`.
+23. Find the longest subarray with sum = `k`.
+24. Find the longest subarray with equal 0s and 1s (binary array).
+25. Find the maximum product subarray.
+26. Count subarrays with sum = `k`.
+27. Find the subarray with minimum length having sum ≥ `k`.
+28. Find the longest increasing subarray.
+
+---
+
+## 🔹 Matrix (2D Array) Questions
+
+29. Search an element in a **row-wise & column-wise sorted matrix**.
+30. Rotate a matrix by 90 degrees.
+31. Print a matrix in **spiral order**.
+32. Transpose of a matrix.
+33. Find the maximum sum submatrix.
+34. Find the diagonal sum of a square matrix.
+35. Set entire row & column to zero if one element is zero.
+
+---
+
+## 🔹 Advanced Array Problems
+
+36. Find the majority element (> n/2 times).
+37. Find elements occurring more than n/3 times.
+38. Find the equilibrium index (sum left = sum right).
+39. Trapping Rainwater problem.
+40. Container With Most Water problem.
+41. Maximum difference between two elements (j > i).
+42. Next Greater Element.
+43. Next Smaller Element.
+44. Stock Buy and Sell to maximize profit (I, II, with cooldown).
+45. Find kth smallest/largest element (using heap/QuickSelect).
+46. Merge intervals.
+47. Insert interval.
+48. Minimum number of platforms (trains arrival/departure).
+49. Count inversions in an array.
+50. Find the longest consecutive sequence.
+
+---
+
+## 🔹 Miscellaneous / Tricky
+
+51. Rearrange positive and negative numbers alternately.
+52. Rearrange array in wave form.
+53. Rearrange array so that `arr[i] = i` if possible.
+54. Maximum circular subarray sum.
+55. Find leaders in an array (element greater than all to right).
+56. Find peak element.
+57. Cyclically rotate an array by one.
+58. Move all zeros to end while maintaining order.
+59. Find smallest missing positive integer.
+60. Implement array using dynamic memory (simulate).
+
+---
+
+👉 This list covers **60 important coding questions on arrays** often asked in interviews (Amazon, Microsoft, Google, Infosys, TCS, etc.).
+
+Would you like me to also **give solutions in Python/Java/TypeScript** for each, or do you want me to **rank them by difficulty and frequency asked in interviews**?
