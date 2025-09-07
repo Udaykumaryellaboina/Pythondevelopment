@@ -118,7 +118,6 @@ def flood_fill_recursive(grid, sr, sc, new_color):
 
     dfs(sr, sc)
     return grid
-```
 
 
 # --- Line-by-line notes ---
@@ -133,7 +132,6 @@ def flood_fill_recursive(grid, sr, sc, new_color):
 
 # 2) Iterative BFS (safer for deep/large regions; preferable)
 
-```python
 
 from collections import deque
 
@@ -163,18 +161,15 @@ def flood_fill_bfs(grid, sr, sc, new_color):
                 grid[nr][nc] = new_color  # mark visited
                 q.append((nr, nc))
     return grid
-```
 
 
 # Why mark on enqueue?
-Setting `grid[nr][nc] = new_color` when we enqueue prevents pushing the same cell multiple times (saves memory/time). You still visit each cell exactly once.
+#Setting `grid[nr][nc] = new_color` when we enqueue prevents pushing the same cell multiple times (saves memory/time). You still visit each cell exactly once.
 
----
 
 
 # 3) Iterative DFS (stack) — similar to BFS, sometimes faster
 
-```python
 def flood_fill_stack(grid, sr, sc, new_color):
     # Iterative DFS implementation using a stack
 
@@ -195,14 +190,11 @@ def flood_fill_stack(grid, sr, sc, new_color):
                 grid[nr][nc] = new_color
                 stack.append((nr, nc))
     return grid
-```
 
----
 
 
 # 4) Flood fill on a Pillow image (practical image example)
 
-```python
 # Requires: pip install pillow
 from PIL import Image
 
@@ -235,22 +227,18 @@ def flood_fill_pil(img: Image.Image, x: int, y: int, new_color):
                 pixels[nx, ny] = new_color
                 stack.append((nx, ny))
     return img
-```
 
 
 # Notes
 
-* Pixel values may be tuples (`(R,G,B)`) or integers (grayscale). Use a `new_color` that matches the image mode.
-* Converting image to `RGBA` or `RGB` first can simplify handling.
+#* Pixel values may be tuples (`(R,G,B)`) or integers (grayscale). Use a `new_color` that matches the image mode.
+#* Converting image to `RGBA` or `RGB` first can simplify handling.
 
----
 
 
 # --- Example (grid) — quick demo ---
 
-Input grid:
 
-```
 flood_fill_bfs(grid, 1, 1, 2)
 
 # Example usage:
@@ -266,12 +254,10 @@ flood_fill_bfs(grid, 1, 1, 2)
 #  [2,2,0],
 #  [2,0,1]
 # ]
-```
 
 
 # Seed (1,1) had value 1, so all connected 1’s reachable via 4-neighbor connectivity become 2.
 
----
 
 
 # --- Practical tips & optimizations ---
@@ -284,7 +270,6 @@ flood_fill_bfs(grid, 1, 1, 2)
 # - For color images compare pixels exactly (tuples). If using floating colors, be careful with equality; consider thresholding.
 # - For repeated labeling across the whole image, use a connected-component labeling algorithm (two-pass union-find) rather than many flood fills.
 
----
 
 
 # --- Use cases (concise) ---
